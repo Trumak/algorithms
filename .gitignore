@@ -1,0 +1,13 @@
+*.iml
+.idea/
+atlassian-ide-plugin.xml
+[Tt]arget/
+out/
+*.log
+*~
+.project
+.settings
+.classpath
+*.factorypath
+desktop.ini
+*.orig
