@@ -1,4 +1,4 @@
-package sort;
+package main.java.sort;
 
 import java.util.Random;
 
@@ -19,8 +19,9 @@ public class AlgorithmRunner {
     int[] testArray6 = testArray.clone();
     int[] testArray7 = testArray.clone();
     int[] testArray8 = testArray.clone();
+    int[] testArray9 = testArray.clone();
 
-    ArrayUtils.printArray(testArray);
+/*    ArrayUtils.printArray(testArray);
     long start = System.currentTimeMillis();
     InsertionSort.sort(testArray);
     long stop = System.currentTimeMillis();
@@ -37,7 +38,7 @@ public class AlgorithmRunner {
     ArrayUtils.printArray(testArray2);
 
     System.out.println();
-    System.out.println("Select sort");
+    System.out.println("Select main.java.sort");
     ArrayUtils.printArray(testArray3);
     long start3 = System.currentTimeMillis();
     SelectSort.sort(testArray3);
@@ -47,7 +48,7 @@ public class AlgorithmRunner {
 
 
     System.out.println();
-    System.out.println("Quick sort");
+    System.out.println("Quick main.java.sort");
     ArrayUtils.printArray(testArray4);
     long start4 = System.currentTimeMillis();
     QuickSort.sort(testArray4);
@@ -56,7 +57,7 @@ public class AlgorithmRunner {
     ArrayUtils.printArray(testArray4);
 
     System.out.println();
-    System.out.println("Heap sort");
+    System.out.println("Heap main.java.sort");
     ArrayUtils.printArray(testArray5);
     long start5 = System.currentTimeMillis();
     HeapSort.sort(testArray5);
@@ -65,7 +66,7 @@ public class AlgorithmRunner {
     ArrayUtils.printArray(testArray5);
 
     System.out.println();
-    System.out.println("Counting sort");
+    System.out.println("Counting main.java.sort");
     ArrayUtils.printArray(testArray6);
     long start6 = System.currentTimeMillis();
     CountingSort.sort(testArray6);
@@ -75,7 +76,7 @@ public class AlgorithmRunner {
 
 
     System.out.println();
-    System.out.println("Radix sort");
+    System.out.println("Radix main.java.sort");
     ArrayUtils.printArray(testArray7);
     long start7 = System.currentTimeMillis();
     RadixSort.sort(testArray7);
@@ -85,13 +86,23 @@ public class AlgorithmRunner {
 
 
     System.out.println();
-    System.out.println("Shell sort");
+    System.out.println("Shell main.java.sort");
     ArrayUtils.printArray(testArray8);
     long start8 = System.currentTimeMillis();
     ShellSort.sort(testArray7);
     long stop8 = System.currentTimeMillis();
     System.out.print(stop8 - start8 + "\n");
-    ArrayUtils.printArray(testArray7);
+    ArrayUtils.printArray(testArray8);*/
+
+    System.out.println();
+    System.out.println("Merge sort iterative version");
+    ArrayUtils.printArray(testArray9);
+    long start9 = System.currentTimeMillis();
+    MergeSort.sortIterative(testArray9);
+    long stop9 = System.currentTimeMillis();
+    System.out.print(stop9 - start9 + "\n");
+    ArrayUtils.printArray(testArray9);
+
 
   }
 }
